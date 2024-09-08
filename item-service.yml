@@ -1,5 +1,6 @@
 server:
-  port: ${random.int(8200,8299)}
+  port: 8200
+#  port: ${random.int(8200,8299)}
 #  servletPath:
 
 #eureka:
