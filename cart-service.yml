@@ -27,4 +27,4 @@ logging:
 spring:
     cloud:
       config:
-        uri: http://localhost:8089
+        uri: http://localhost:8080
