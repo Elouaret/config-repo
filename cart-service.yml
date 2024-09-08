@@ -24,7 +24,3 @@ logging:
       springframework:
         security: DEBUG
 
-spring:
-    cloud:
-      config:
-        uri: http://localhost:8080
