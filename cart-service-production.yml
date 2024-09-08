@@ -1,0 +1,19 @@
+user:
+  role: prod-role
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+  
+spring:
+    cloud:
+      config:
+        uri: http://localhost:8088

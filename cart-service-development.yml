@@ -1,0 +1,22 @@
+server:
+  port: ${random.int(8100,8199)}
+
+user:
+  role: dev-role
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG 
+   
+spring:
+    cloud:
+      config:
+        uri: http://localhost:8081

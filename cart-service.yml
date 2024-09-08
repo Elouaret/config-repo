@@ -1,0 +1,30 @@
+user:
+  role: default-role
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    sensitive: true
+    actuator:
+        enabled: true
+  endpoint:      
+    env:
+      post:
+        enable: true
+    restart:
+      enabled: true  
+    refresh:
+      enabled: true  
+      
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+
+spring:
+    cloud:
+      config:
+        uri: http://localhost:8089
