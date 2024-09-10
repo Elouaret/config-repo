@@ -1,3 +1,11 @@
 server:
   port: 8090  
   # port: ${random.int(8081,8099)}
+
+cart:
+  service:
+    name: cart-service
+
+item:
+  service:
+    name: item-service
