@@ -13,7 +13,6 @@ spring:
           git:
             uri: https://github.com/Elouaret/config-repo.git
             searchpaths: 
-              - '{application}'
               - '{application}/{profile}'
             clone-on-start: true
             default-label: main
