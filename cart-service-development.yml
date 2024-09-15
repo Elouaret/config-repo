@@ -3,7 +3,7 @@ server:
 #  port: ${random.int(8100,8199)}
 
 user:
-  role: dev-role-16
+  rolesss: dev-role-16
   
 management:
   endpoints:
