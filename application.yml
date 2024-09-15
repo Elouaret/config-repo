@@ -8,10 +8,10 @@ eureka:
 spring:
     cloud:
       config:
-        uri: https://github.com/Elouaret/config-repo.git
+        uri: https://github.com/Elouaret/config-repo.git\{application}
         server:
           git:
-            uri: https://github.com/Elouaret/config-repo.git
+            uri: https://github.com/Elouaret/config-repo.git\{application}
             force-pull: true
             searchPaths: '{application}'
             clone-on-start: true
