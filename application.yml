@@ -16,5 +16,6 @@ spring:
             searchPaths: '\{application}'
             clone-on-start: true
             default-label: main
+            refresh-rate: 1
     compatibility-verifier:
       enabled: false
