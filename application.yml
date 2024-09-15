@@ -12,7 +12,7 @@ spring:
         server:
           git:
             uri: https://github.com/Elouaret/config-repo.git
-              force-pull: true
+            force-pull: true
             searchPaths: '\{application}'
             clone-on-start: true
             default-label: main
