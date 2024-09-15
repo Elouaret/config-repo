@@ -8,12 +8,12 @@ eureka:
 spring:
     cloud:
       config:
-        uri: https://github.com/Elouaret/config-repo.git\{application}
+        uri: https://github.com/Elouaret/config-repo.git
         server:
           git:
-            uri: https://github.com/Elouaret/config-repo.git\{application}
+            uri: https://github.com/Elouaret/config-repo.git
             force-pull: true
-            searchPaths: '{application}'
+            searchPaths: '\{application}'
             clone-on-start: true
             default-label: main
     compatibility-verifier:
