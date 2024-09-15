@@ -8,4 +8,11 @@ eureka:
 spring:
     cloud:
       config:
-        uri: http://localhost:8888
+        uri: https://github.com/Elouaret/config-repo.git
+        server:
+          git:
+            searchpaths: {application}/{profile}
+            clone-on-start: true
+            default-label: main
+    compatibility-verifier:
+      enabled: false
