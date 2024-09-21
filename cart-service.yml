@@ -1,5 +1,5 @@
 user:
-  role: default-role-2
+  role: default-role-3
 
 management:
   endpoints:
