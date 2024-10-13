@@ -5,6 +5,10 @@ eureka:
   instance:
     preferIpAddress: true
     
+item:
+  service:
+    name: item-service
+    
 spring:
     rabbitmq:
       host: localhost
