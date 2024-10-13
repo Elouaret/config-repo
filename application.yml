@@ -7,7 +7,7 @@ eureka:
 
 cart:
   service:
-    name: cart-service
+    name: cart-service-2
     
 spring:
     rabbitmq:
