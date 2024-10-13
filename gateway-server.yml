@@ -12,5 +12,8 @@ item:
     
 spring:
   cloud:
-    discovery:
-      enabled: true
+    gateway:
+     discovery:
+       locator:
+         enabled: true
+           lower-case-service-id: true
