@@ -24,3 +24,7 @@ spring:
             refresh-rate: 1
     compatibility-verifier:
       enabled: false
+
+gateway:
+  service:
+    name: gateway-service
