@@ -18,15 +18,16 @@ spring:
           lower-case-service-id: true
           enabled: true
           lowerCaseServiceId: true
-      routes:
-        - id: ${cart.service.name}
-          uri: lb://${cart.service.name}
-          predicates:
-            - Path=/**
-        - id: ${item.service.name}
-          uri: lb://${item.service.name}
-          predicates:
-            - Path=/**    
+      mvc:
+        routes:
+          - id: ${cart.service.name}
+            uri: lb://${cart.service.name}
+            predicates:
+              - Path=/**
+          - id: ${item.service.name}
+            uri: lb://${item.service.name}
+            predicates:
+              - Path=/**    
       routes[0]:
         id: item-service
         uri: lb://item-service
