@@ -17,6 +17,7 @@ spring:
         locator:
           lower-case-service-id: true
           enabled: true
+          lowerCaseServiceId: true
       routes:
         - id: ${cart.service.name}
           uri: lb://${cart.service.name}
