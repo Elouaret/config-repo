@@ -9,7 +9,11 @@ cart:
 item:
   service:
     name: item-service
-    
+
+eureka:
+    client:
+        fetchRegistry: true
+        registerWithEureka: false    
 spring:
   cloud:
     gateway:
