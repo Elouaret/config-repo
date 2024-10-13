@@ -9,3 +9,8 @@ cart:
 item:
   service:
     name: item-service
+    
+spring:
+  cloud:
+    discovery:
+      enabled: true
