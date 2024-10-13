@@ -10,3 +10,24 @@ item:
   service:
     name: item-service
 
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          lower-case-service-id: true
+          enabled: true
+      routes:
+        - id: ${cart.service.name}
+          uri: lb://${cart.service.name}
+          predicates:
+            - Path=/**
+        - id: ${item.service.name}
+          uri: lb://${item.service.name}
+          predicates:
+            - Path=/**    
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+
