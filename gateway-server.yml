@@ -18,12 +18,14 @@ spring:
           lower-case-service-id: true
           enabled: true
       routes:
-        - id: cart-service
-          uri: http://localhost:8100/
+        - id: ${cart.service.name}
+          #uri: http://localhost:8100/
+          uri: lb://${cart.service.name}
           predicates:
             - Path=/cart/**
-        - id: item-service
-          uri: http://localhost:8200/
+        - id: ${item.service.name}
+          #uri: http://localhost:8200/
+          uri: lb://${item.service.name}
           predicates:
             - Path=/item/**
     
