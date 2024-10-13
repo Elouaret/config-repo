@@ -27,4 +27,4 @@ spring:
 
 gateway:
   service:
-    name: gateway-service
+    name: gateway-server
