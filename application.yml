@@ -5,6 +5,10 @@ eureka:
   instance:
     preferIpAddress: false
 
+cart:
+  service:
+    name: cart-service
+    
 spring:
     rabbitmq:
       host: localhost
