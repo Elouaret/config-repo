@@ -11,6 +11,8 @@ item:
     name: item-service
 
 spring:
+  main:
+    web-application-type: reactive
   cloud:
     gateway:
       discovery:
@@ -40,4 +42,3 @@ eureka:
   client:
     fetchRegistry: true
     registerWithEureka: true
-
