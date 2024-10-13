@@ -13,6 +13,10 @@ item:
 spring:
   cloud:
     gateway:
+      discovery:
+        locator:
+          lower-case-service-id: true
+          enabled: true
       routes:
         - id: cart-service
           uri: http://localhost:8100/
