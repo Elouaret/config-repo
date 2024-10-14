@@ -12,7 +12,7 @@ item:
 spring:
     rabbitmq:
       host: localhost
-      port: 5672
+      port: 5671
       username: guest
       password: guest
     cloud:
