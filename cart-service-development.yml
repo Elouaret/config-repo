@@ -2,7 +2,7 @@ server:
  port: 8100
 
 user:
-  role: dev
+  role: admin
   
 management:
   endpoints:
