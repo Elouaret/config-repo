@@ -1,6 +1,5 @@
 server:
  port: 8100
-#  port: ${random.int(8100,8199)}
 
 user:
   role: dev
