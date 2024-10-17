@@ -1,30 +1,5 @@
 server:
   port: 8200
-#  port: ${random.int(8200,8299)}
-#  servletPath:
-
-#eureka:
-#  client:
-#    serviceUrl:
-#      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
-#    tls:
-#      enabled: true
-#      key-store: <path-of-key-store>
-#      key-store-type: PKCS12
-#      key-store-password: <key-store-password>
-#      key-password: <key-password>
-#      trust-store: <path-of-trust-store>
-#      trust-store-type: PKCS12
-#      trust-store-password: <trust-store-password>
-#    healthcheck:
-#      enabled: true
-#  instance:
-#    preferIpAddress: false
-#    statusPageUrlPath: ${server.servletPath}/info
-#    healthCheckUrlPath: ${server.servletPath}/health
-#    statusPageUrl: https://${eureka.hostname}/info
-#    healthCheckUrl: https://${eureka.hostname}/health
-#    homePageUrl: https://${eureka.hostname}/
 
 management:
   endpoints:
