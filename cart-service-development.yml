@@ -1,8 +1,8 @@
 server:
  port: 8100
 
-user:
-  role: toto
+editique:
+  url: dev
   
 management:
   endpoints:
