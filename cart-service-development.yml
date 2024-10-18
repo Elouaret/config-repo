@@ -2,7 +2,7 @@ server:
  port: 8100
 
 editique:
-  url: dev
+  url: prod-1523
   
 management:
   endpoints:
