@@ -16,7 +16,8 @@ spring:
         rabbit:
           default:
             consumer:
-              anonymousGroupPrefix: ${spring.application.name}-${server.port}
+              anonymousGroupPrefix: anonymous.${spring.application.name}-
+
       config:
         uri: https://github.com/Elouaret/config-repo.git
         server:
