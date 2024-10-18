@@ -12,6 +12,11 @@ spring:
       username: guest
       password: guest
     cloud:
+      stream:
+        rabbit:
+          default:
+            consumer:
+              anonymousGroupPrefix: ${spring.application.name}-${server.port}
       config:
         uri: https://github.com/Elouaret/config-repo.git
         server:
