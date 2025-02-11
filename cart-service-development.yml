@@ -2,7 +2,7 @@ server:
  port: 8100
 
 editique:
-  url: integration
+  url: test
   
 management:
   endpoints:
