@@ -2,7 +2,7 @@ server:
  port: 8100
 
 editique:
-  url: test
+  url: apside
   
 management:
   endpoints:
